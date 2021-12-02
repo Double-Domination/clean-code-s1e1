@@ -4,7 +4,7 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.hero{
+.hero {
   width: 500px;
   margin: 0 auto;
   display: block;
@@ -29,7 +29,7 @@ body {
   margin: 0 auto 0;
 }
 
-.heading{
+.heading {
   font-family: Lato, sans-serif;
   display: block;
   margin: 0 0 20px;
@@ -42,12 +42,11 @@ body {
   text-transform: uppercase;
 }
 
-.add-task{
+.add-task {
   display: block;
   margin-bottom: 2em;
 }
-.add-task__row{
-  
+.add-task__row {
   outline: none;
   display: flex;
   flex-direction: row;
@@ -55,7 +54,7 @@ body {
 .add-task__label {
 }
 
-.add-task__input{
+.add-task__input {
   margin: 0;
   min-width: 400px;
   /* figure out whats wrong with sizing   */
@@ -73,7 +72,7 @@ body {
   color: #333;
 }
 
-.add-task__button{
+.add-task__button {
   background: none;
   border: 0px;
   color: #888;
@@ -83,20 +82,19 @@ body {
 }
 
 .add-task__button:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 
-.tasks-current{
-  
+.tasks-current {
 }
 
-.tasks-incomplete{
+.tasks-incomplete {
   margin: 0;
   padding: 0px;
 }
 
-.tasks-incomplete__item{
-  list-style: none;  
+.tasks-incomplete__item {
+  list-style: none;
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -105,61 +103,44 @@ body {
   align-items: center;
 }
 
-.tasks-incomplete__label{
+.tasks-incomplete__label {
   list-style: none;
   vertical-align: middle;
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   flex-grow: 1;
-
 }
-.tasks-incomplete__checkbox{
+.tasks-incomplete__checkbox {
   list-style: none;
   outline: none;
   vertical-align: middle;
   margin: 0 10px;
 }
 
-.tasks-incomplete__edit{
-    display: none;
-    list-style: none;
-    outline: none;
-    vertical-align: middle;
-    margin: 0;
-    font-size: 18px;
-    line-height: 18px;
-    height: 21px;
-    padding: 0 9px;
-    border: 1px solid #ddd;
-    background: #fff;
-    border-radius: 6px;
-    font-family: Lato, sans-serif;
-    color: #888;
-    width: 226px;
+.tasks-incomplete__edit {
+  display: none;
+  list-style: none;
+  outline: none;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+  width: 226px;
 }
 
-.tasks-incomplete__edit:focus{
+.tasks-incomplete__edit:focus {
   color: #333;
 }
 
-.tasks-incomplete__btn-edit{
-    list-style: none;
-    outline: none;
-    background: none;
-    border: 0px;
-    color: #888;
-    font-size: 15px;
-    width: 60px;
-    font-family: Lato, sans-serif;
-    cursor: pointer;
-    vertical-align: middle;
-}
-
-.tasks-incomplete__btn-edit:hover{
-    color: #3a3a3a;
-}
-.tasks-incomplete__btn-del{
+.tasks-incomplete__btn-edit {
   list-style: none;
   outline: none;
   background: none;
@@ -172,32 +153,58 @@ body {
   vertical-align: middle;
 }
 
-.tasks-incomplete__btn-del:hover{
-    color: #3a3a3a;
+.tasks-incomplete__btn-edit:hover {
+  color: #3a3a3a;
+}
+.tasks-incomplete__btn-del {
+  list-style: none;
+  outline: none;
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+  vertical-align: middle;
 }
 
-.tasks-incomplete__btn-del-icon{
+.tasks-incomplete__btn-del:hover {
+  color: #3a3a3a;
+}
+
+.tasks-incomplete__btn-del-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.tasks-incomplete__btn-del-icon:hover{
+.tasks-incomplete__btn-del-icon:hover {
   transition: transform 200ms ease-in;
   transform: rotateZ(0);
 }
 
-.tasks-incomplete__edit--editmode{
-  list-style: none;  
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
+.tasks-incomplete__edit--editmode {
+  list-style: none;
+  outline: none;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+  width: 226px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.tasks-incomplete__btn-save{
+.tasks-incomplete__btn-save {
   list-style: none;
   outline: none;
   background: none;
@@ -208,9 +215,8 @@ body {
   font-family: Lato, sans-serif;
   cursor: pointer;
   vertical-align: middle;
-  
 }
 
-.tasks-incomplete__btn-save:hover{
+.tasks-incomplete__btn-save:hover {
   color: #3a3a3a;
 }

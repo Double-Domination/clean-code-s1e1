@@ -3,32 +3,54 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
   <title>Todo App</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" 
-        href="style.css"
-        media="screen"
-        charset="utf-8">
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="style.css"
+    media="screen"
+    charset="utf-8"
+  >
 </head>
 
 <body>
   <div class="hero">
-    <img class="hero__image" src="./eisenhower-matrix.jpg">
-    <a class="hero__link" href="https://goal-life.com/page/method/matrix-eisenhower">
+    <img
+      class="hero__image"
+      src="./eisenhower-matrix.jpg"
+      alt="matrix"
+    >
+    <a
+      class="hero__link"
+      href="https://goal-life.com/page/method/matrix-eisenhower"
+    >
       Want more details?
     </a>
   </div>
   <div class="wrapper">
-<!-- add task section -->
+    <!-- add task section -->
     <div class="add-task">
       <h3 class="heading">
         Add Item
       </h3>
       <div class="add-task__row">
         <label class="add-task__label">
-          <input class="add-task__input" type="text">
+          <input
+            placeholder="write something"
+            class="add-task__input"
+            type="text"
+          >
         </label>
         <button class="add-task__button">
           Add
@@ -36,41 +58,71 @@
 
       </div>
     </div>
-<!-- current tast section -->
+    <!-- current tast section -->
     <div class="tasks-current">
       <h3 class="heading">
         Todo
       </h3>
       <ul class="tasks-incomplete">
+        <!-- default task view  -->
         <li class="tasks-incomplete__item">
           <label class="tasks-incomplete__label">
-            <input class="tasks-incomplete__checkbox" type="checkbox">
-            Pay Bills
+            <input
+              class="tasks-incomplete__checkbox"
+              type="checkbox"
+            >
+            <span class="task-incomplete__labelfield">
+              Pay Bills
+            </span>
           </label>
-          <input type="text" class="tasks-incomplete__edit">
+
+          <input
+            type="text"
+            class="tasks-incomplete__edit"
+          >
           <button class="tasks-incomplete__btn-edit">
             Edit
           </button>
-          <button class="tasks-incomplete__btn-del">
-            <img class="tasks-incomplete__btn-del-icon" src="./remove.svg">
-          </button>
+          <div class="tasks-incomplete__btn-del">
+            <img
+              class="tasks-incomplete__btn-del-icon"
+              src="./remove.svg"
+              alt="remove-button"
+            >
+          </div>
         </li>
+        <!-- default task view ends -->
 
-
+        <!-- edit mode view -->
         <li class="tasks-incomplete__item">
-          <input class="tasks-incomplete__checkbox" type="checkbox">
+          <label class="tasks-incomplete__label">
+            <input
+              class="tasks-incomplete__checkbox"
+              type="checkbox"
+            >
+            <span class="task-incomplete__labelfield">
+              hide me in edit
+            </span>
+          </label>
 
-          <input type="text" class="tasks-incomplete__edit--editmode " value="-=go shopping=-">
+          <input
+            type="text"
+            class="tasks-incomplete__edit--editmode "
+            value="-=go shopping=-"
+          >
 
           <button class="tasks-incomplete__btn-save">
             Save
           </button>
-          <button class="tasks-incomplete__btn-del">
-            <img class="tasks-incomplete__btn-del-icon" src="./remove.svg">
-          </button>
+          <div class="tasks-incomplete__btn-del">
+            <img
+              class="tasks-incomplete__btn-del-icon"
+              src="./remove.svg"
+              alt="remove-button"
+            >
+          </div>
         </li>
-
-     
+        <!-- edit mode view -->
       </ul>
     </div>
 
@@ -79,13 +131,19 @@
       <ul id="completed-tasks">
         <li>
           <label class="task">
-            <input type="checkbox" checked>
+            <input
+              type="checkbox"
+              checked
+            >
             See the Doctor
           </label>
           <input type="text">
-          <button class="delete">
-            <img src="./remove.svg">
-          </button>
+          <div class="delete">
+            <img
+              src="./remove.svg"
+              alt="remove-button"
+            >
+          </div>
         </li>
       </ul>
     </div>
